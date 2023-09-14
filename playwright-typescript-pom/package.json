@@ -1,0 +1,23 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:reporter": "npx playwright test tests/fwkTesting.spec.ts --headed --reporter=allure-playwright",
+    "open:allure-report": "npx ./allure generate ./allure-results && allure open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jagota-s/playwright-typescript-pom"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.32",
+    "allure-playwright": "^2.0.0-beta.20",
+    "@axe-core/playwright": "4.6.0"
+  }
+}
